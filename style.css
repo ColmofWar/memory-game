@@ -1,0 +1,105 @@
+html {
+  background: rgb(1, 6, 44);
+  color: rgb(163, 156, 156);
+  margin: 20px;
+  h1{
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  h3{
+    text-align: center;
+  }
+  body{
+    min-height: 100vh; 
+    min-width: 800px;
+  }
+  
+}
+#game div {
+  border: 1px solid rgb(175, 156, 156);
+  width: 175px;
+  height: 250px;
+  margin: 10px;
+  display: inline-block;
+  transition: 1s;
+}
+#scoreBoard {
+  border: 5px solid rgb(10, 110, 6.800);
+  width: 48%;
+  height: 250px;
+  margin: 0px;
+  display: inline-block;
+}
+#highScore {
+  border: 5px solid rgba(194, 182, 6, 0.800);
+  width: 48%;
+  height: 250px;
+  margin: 0px;
+  display: inline-block;
+}
+
+#gameControl {
+  text-align: center;
+
+}
+
+.face-down{  /* Card face down texture toggled on and off to show or hide color of card*/
+  
+  /* CSS pattern from freefrontend.com */
+  --s: 20px; /* control the size */
+  --c: #542437;
+  
+  --_g: 
+    #0000 calc(-650%/13) calc(50%/13),var(--c) 0 calc(100%/13),
+    #0000 0 calc(150%/13),var(--c) 0 calc(200%/13),
+    #0000 0 calc(250%/13),var(--c) 0 calc(300%/13);
+  --_g0: repeating-linear-gradient( 45deg,var(--_g));
+  --_g1: repeating-linear-gradient(-45deg,var(--_g));
+  background:
+    var(--_g0),var(--_g0) var(--s) var(--s),
+    var(--_g1),var(--_g1) var(--s) var(--s) #beabc5 !important;
+  background-size: calc(2*var(--s)) calc(2*var(--s)) !important;
+  /* end of CSS pattern from freefrontend.com */
+}
+
+.face-down:hover {
+  --c: #5424376e;
+}
+
+.matched{
+  /* CSS pattern from freefrontend.com */
+  transition: 0s !important;
+  --s: 400px; /* control the size */
+  --c: #542437;
+  
+  --_g: 
+    #0000 calc(-650%/13) calc(50%/13),var(--c) 0 calc(100%/13),
+    #0000 0 calc(150%/13),var(--c) 0 calc(200%/13),
+    #0000 0 calc(250%/13),var(--c) 0 calc(300%/13);
+  --_g0: repeating-linear-gradient( 45deg,var(--_g));
+  --_g1: repeating-linear-gradient(-45deg,var(--_g));
+  background:
+    var(--_g0),var(--_g0) var(--s) var(--s),
+    var(--_g1),var(--_g1) var(--s) var(--s) #beabc5;
+  background-size: calc(2*var(--s)) calc(2*var(--s));
+  /* end of CSS pattern from freefrontend.com */
+}
+
+.red{
+  background-color:red;
+}
+.blue{
+  background-color:blue;
+}
+.green{
+  background-color:green;
+}
+.orange{
+  background-color:orange;
+}
+.purple{
+  background-color: purple;
+}
+
